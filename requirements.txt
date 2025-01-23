@@ -2,3 +2,4 @@ streamlit
 audio-recorder-streamlit
 langchain-groq
 openai
+streamlit-extras
