@@ -13,7 +13,10 @@ import os
 
 voice_input = False
 
-
+st.logo(
+    "https://help.ecler.com/hc/theming_assets/01HZKNMDPYB7DDPZFR3J1QZ9Y1",
+    size="large"
+)
 st.title("Text-to-TPNET Assistant 🤖")
 with st.expander("ℹ️ Disclaimer"):
     st.caption(
@@ -38,8 +41,6 @@ with col_connect:
         with st.spinner("Connecting to device..."):
             response = send_tpnet_command("SYSTEM CONNECT\n")
             parse_device_data(response)
-            st.markdown(
-                f"**Connected to TPNET Device successfully! IP**: {device_ip}")
             connected = True
 
 
@@ -266,7 +267,7 @@ if "device_data" in st.session_state:
         audio_data = audio_recorder(pause_threshold=1.0, sample_rate=16000)
 
     # The pinned chat input
-    prompt = st.chat_input("Type a message...")
+    prompt = st.chat_input("What TPNET command would you like to send?")
 
     transcribed_prompt = ""
 

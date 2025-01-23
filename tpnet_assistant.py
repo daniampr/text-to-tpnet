@@ -26,8 +26,7 @@ def transcribe(audio_file: str) -> str:
     audio_file = open(audio_file, "rb")
     transcription = client.audio.transcriptions.create(
         model="whisper-1",
-        file=audio_file,
-        language="es"
+        file=audio_file
     )
     return transcription.text
 
@@ -153,7 +152,7 @@ def parse_device_data(data_response: str):
     Parses a multi-line TP-NET response (from GET ALL, etc.)
     and stores each recognized DATA line in st.session_state["device_data"].
 
-    Supports VIDA, HUB, eMIMO, MIMO
+    Supports VIDA, HUB, MIMO
     """
 
     # Ensure we have a device_data dict with all possible keys
