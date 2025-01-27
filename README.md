@@ -1,7 +1,7 @@
 # text-to-tpnet
 Repository for the source code of an AI model that converts natural language to Ecler's TP-NET protocol commands.
 
-![Image](https://github.com/user-attachments/assets/37507d9c-6dfa-42e2-8392-fd08f16a54cb)
+![Image](https://help.ecler.com/hc/theming_assets/01HZKNMDPYB7DDPZFR3J1QZ9Y1)
 
 ## About TP-NET
 TP-NET is a protocol developed by Ecler to control their audio devices. It is a text-based protocol that allows users to send commands to the devices. The protocol is based on a set of commands that are sent to the device to control its functionalities, such as volume control, input selection, and power management, among others. The commands are sent in plain text format, making it easy to implement and use.
