@@ -9,8 +9,6 @@ Available devices that support TP-NET protocol in this project are:
 - VIDA series
 - HUB series
 - MIMO series
-- eMIMO series
-
 More information about the TP-NET protocol can be found in the [official documentation](https://media.ecler.com/1702317974-ecler-tp-net-protocol-en.pdf).
 
 ## About the project
